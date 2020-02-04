@@ -1,0 +1,60 @@
+/*
+ Theme Name:   Practice
+ Author:       Rosina Brooker
+ Template:     StrapPress-master
+ Version:      1.0.0
+*/ 
+
+h2{
+  color: white;
+  font-size: 1.1rem;
+}
+
+.info {
+ text-align: center;
+}
+
+.exampleHead{
+  color: #212529;
+}
+
+.exampleMain{
+  font-size: 1rem;
+  color: #6c757d;
+  font-weight: narrower;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#barbtn {
+  margin: 0 2px;
+}
+
+img {
+  width: 100%;
+}
+
+.card-deck {
+  margin-top: 2rem;
+}
+
+.card {
+  margin: 0 1rem;
+  box-shadow: 1px 1px gray;
+}
+
+.postbtn {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: .2rem;
+    margin: 0 1px;
+    padding: 2px 6px;
+}
+
+.text-muted {
+  margin-left: 9rem;
+}
