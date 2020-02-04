@@ -2,7 +2,7 @@
  Theme Name:   Practice
  Author:       Rosina Brooker
  Template:     StrapPress-master
- Version:      1.0.0
+ Version:      3.0.0
 */ 
 
 h2{
@@ -31,10 +31,6 @@ h2{
 
 #barbtn {
   margin: 0 2px;
-}
-
-img {
-  width: 100%;
 }
 
 .card-deck {
