@@ -29,12 +29,11 @@ get_header(); ?>
  <div class="card-deck">
   <div class="card">
     <?php 
-      while(have_posts()) {
-        the_post();
-      }
-  
-    if ( has_post_thumbnail() ) {
-         the_post_thumbnail();
+    
+     if ( have_posts() ) : 
+      while ( have_posts() ) : the_post(); 
+      if ( has_post_thumbnail() ) {
+         the_post_thumbnail("medium");
        }
     ?>
     <div class="card-body">
@@ -48,50 +47,9 @@ get_header(); ?>
     </div>
   </div>
    
-    <div class="card">
-    <?php 
-      while(have_posts()) {
-        the_post();
-      }
-  
-    if ( has_post_thumbnail() ) {
-         the_post_thumbnail();
-       }
-    ?>
-    <div class="card-body">
-      <h5 class="card-title"><?php the_title(); ?></h5>
-      <p class="card-text"><?php the_content(); ?></p>
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <a href="<?php the_permalink(); ?>" class="postbtn">View</a>
-        <a href="https://tyxandevelopment.com/rosina/wp-admin/post.php?post=20&action=edit" class="postbtn">Edit</a>
-        <p class="card-text"><small class="text-muted">9 mins</small></p>
-        </div>
-    </div>
-  </div>
-   
-    <div class="card">
-    <?php 
-      while(have_posts()) {
-        the_post();
-      }
-  
-    if ( has_post_thumbnail() ) {
-         the_post_thumbnail();
-       }
-    ?>
-    <div class="card-body">
-      <h5 class="card-title"><?php the_title(); ?></h5>
-      <p class="card-text"><?php the_content(); ?></p>
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <a href="<?php the_permalink(); ?>" class="postbtn">View</a>
-        <a href="https://tyxandevelopment.com/rosina/wp-admin/post.php?post=20&action=edit" class="postbtn">Edit</a>
-
-        <p class="card-text"><small class="text-muted">9 mins</small></p>
-        </div>
-    </div>
-  </div>
- </div>
- 
+   <?php endwhile; 
+     endif; 
+   ?>
       
   
 		</main><!-- #main -->
